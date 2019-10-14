@@ -19,6 +19,7 @@
                 if (oPanel)
                 oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
                 if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                 _idleSecondsCounter--
                  alert("Je sessie is verlopen, log opnieuw in aub")
                 document.location.href = "index.html";
                 }
