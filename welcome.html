@@ -1,6 +1,6 @@
 
  <script type="text/javascript">
-             var IDLE_TIMEOUT = 10; //seconds
+             var IDLE_TIMEOUT = 30; //seconds
                 var _idleSecondsCounter = 0;
                 document.onclick = function() {
                 _idleSecondsCounter = 0;
@@ -19,6 +19,7 @@
                 if (oPanel)
                 oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
                 if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                 alert("Je sessie is verlopen, log opnieuw in aub")
                 document.location.href = "index.html";
                 }
                 }
